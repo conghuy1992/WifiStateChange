@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/baseline_search_white_24"
+        android:title="action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/baseline_more_vert_white_24"
+        android:title=""
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/action_csv"
+                android:icon="@drawable/ic_csv"
+                android:orderInCategory="100"
+                android:title="Export CSV File"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_txt"
+                android:icon="@drawable/ic_txt"
+                android:orderInCategory="100"
+                android:title="Export TXT File"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/action_pdf"
+                android:icon="@drawable/ic_pdf"
+                android:orderInCategory="100"
+                android:title="Export PDF File"
+                app:showAsAction="ifRoom" />
+            <item
+                android:orderInCategory="100"
+                android:icon="@drawable/ic_relational"
+                android:title="Related apps - tool:"
+                app:showAsAction="ifRoom" />
+
+            <!--<item-->
+                <!--android:id="@+id/action_extract"-->
+                <!--android:orderInCategory="100"-->
+                <!--android:title="   1. Extract Apk File"-->
+                <!--app:showAsAction="ifRoom" />-->
+            <!--<item-->
+                <!--android:id="@+id/action_trans"-->
+                <!--android:orderInCategory="100"-->
+                <!--android:title="   2. Transfer Phone Number"-->
+                <!--app:showAsAction="ifRoom" />-->
+            <!--<item-->
+                <!--android:id="@+id/action_color"-->
+                <!--android:orderInCategory="100"-->
+                <!--android:title="   3. Color status bar"-->
+                <!--app:showAsAction="ifRoom" />-->
+            <!--<item-->
+                <!--android:id="@+id/action_metal"-->
+                <!--android:orderInCategory="100"-->
+                <!--android:title="   4. Metal Detector"-->
+                <!--app:showAsAction="ifRoom" />-->
+            <!--<item-->
+                <!--android:id="@+id/action_other"-->
+                <!--android:orderInCategory="100"-->
+                <!--android:title="   5. Other apps"-->
+                <!--app:showAsAction="ifRoom" />-->
+        </menu>
+    </item>
+</menu>
